@@ -1,0 +1,9 @@
+header {
+    min-height: 70px;
+}
+
+.title-banner {
+    min-height: 827px;
+    background-image: url(../img/title-banner-img.png);
+    background-size: cover;
+}
