@@ -5,5 +5,65 @@ header {
 .title-banner {
     min-height: 827px;
     background-image: url(../img/title-banner-img.png);
-    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+
+.banner {
+    min-height: 779px;
+}
+
+.search-room {
+    min-height: 345px;
+    background-image: url(../img/search-room-bg-img.png);
+    width: 100%;
+    background-position: center;
+}
+
+.actual-offers {
+    min-height: 1621px;
+}
+
+.rent-out-room {
+    min-height: 569px;
+    background-image: url(../img/rent-out-room-bg-img.png);
+    width: 100%;
+    background-position: center;
+}
+
+.about-company {
+    min-height: 839px;
+}
+
+.advantages {
+    min-height: 1120px;
+    background-image: url(../img/advantages-bg-img.png);
+    width: 100%;
+    background-position: center;
+}
+
+.question-banner {
+    min-height: 684px;
+    width: 100%;
+    background-image: url(../img/questions-img.png);
+    margin-top: 160px;
+    background-position: center;
+}
+
+.questions {
+    min-height: 684px;
+}
+
+footer {
+    min-height: 460px;
+    background-color: #293561;
+}
+
+.about-site {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.wrap {
+    display: flex;
 }
