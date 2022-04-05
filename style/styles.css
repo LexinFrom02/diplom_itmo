@@ -1,3 +1,6 @@
+@import url(../fonts/neue.css);
+@import url(../fonts/ttoctosquares.css);
+
 header {
     min-height: 70px;
 }
@@ -34,6 +37,7 @@ header {
 
 .about-company {
     min-height: 839px;
+    padding: 40px 0 2px 0;
 }
 
 .advantages {
@@ -92,13 +96,11 @@ footer {
     position: absolute;
     width: 1055px;
     height: 322px;
-    background: linear-gradient(
-        95.32deg,
-        rgba(255, 255, 255, 0.04) 5.89%,
-        rgba(255, 255, 255, 0.888998) 52.33%,
-        rgba(255, 255, 255, 0.633434) 76.94%,
-        rgba(255, 255, 255, 0) 103.34%
-    );
+    background: linear-gradient(95.32deg,
+            rgba(255, 255, 255, 0.04) 5.89%,
+            rgba(255, 255, 255, 0.888998) 52.33%,
+            rgba(255, 255, 255, 0.633434) 76.94%,
+            rgba(255, 255, 255, 0) 103.34%);
     margin: 281px 0px 0 -153px;
 }
 
@@ -149,7 +151,7 @@ footer {
     margin-left: 50px;
 }
 
-.banner-left-item p {
+.title-black {
     font-family: "TT Firs Neue";
     font-style: normal;
     font-weight: 700;
@@ -225,4 +227,193 @@ footer {
     color: #ffffff;
     opacity: 0.93;
     margin: 132px 0 0 48px;
+}
+
+.actual-offers-item {
+    text-align: center;
+    padding: 60px 0 20px 0;
+}
+
+.actual-offers-button {
+    margin: 40px 0 10px 0;
+}
+
+.call-help {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    color: #010D01;
+}
+
+.call-help:hover {
+    font-weight: 500;
+    color: #26325f;
+    text-decoration: none;
+}
+
+.rent-your-room-title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #26325F;
+    margin: 91px 0 29px 0;
+}
+
+.article-content {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #000000;
+    padding: 15px 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.infographics {
+    padding: 42px 0 87px 0;
+}
+
+.info-upper-font {
+    font-family: 'TT Octosquares';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 77px;
+    color: #000000;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.info-lower-font {
+    font-family: 'TT Octosquares';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-left: 40px;
+}
+
+.about-company-title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.info-align-end {
+    display: flex;
+    align-items: flex-end;
+}
+
+.container-advantages {
+    width: 82%;
+}
+
+.advantages-title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.advantages-item {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.advantages-item-title {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26.5959px;
+    line-height: 135%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.advantages-item-content {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.6408px;
+    line-height: 120%;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.advantages-item-tag {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.6408px;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+
+.advantage-article {
+    padding: 40px 0 0 10px;
+}
+
+.advantages-button-group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-advantages {
+    width: 270px;
+    margin-bottom: 40px;
+}
+
+.btn-dvantages-call-help {
+    background-color: transparent;
+    border: 1px solid #16ff00;
+    color: #ffffff;
+}
+
+.btn-dvantages-call-help:hover {
+    color: #000000;
+}
+
+.social {
+    display: flex;
+    justify-content: start;
+    padding-top: 200px;
+}
+
+.soc-item {
+    font-family: 'TT Firs Neue';
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+
+.soc-item a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.soc-item a:hover {
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
 }
