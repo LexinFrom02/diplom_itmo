@@ -11,6 +11,7 @@ header {
 
 .banner {
     min-height: 779px;
+    padding-top: 211px;
 }
 
 .search-room {
@@ -77,7 +78,7 @@ footer {
 
 .nav-item a {
     text-decoration: none;
-    color: #010D01;
+    color: #010d01;
     cursor: pointer;
 }
 
@@ -96,11 +97,8 @@ footer {
 }
 
 .banner-gradient-header {
-    /* position: absolute; */
     width: 943px;
     height: 154.12px;
-    /* left: 198px; */
-    /* top: 402px; */
     font-family: "TT Firs Neue";
     font-style: normal;
     font-weight: 600;
@@ -114,11 +112,8 @@ footer {
 }
 
 .banner-gradient-content {
-    /* position: absolute; */
     width: 943px;
     height: 52px;
-    /* left: 198px; */
-    /* top: 571px; */
     font-family: "TT Firs Neue";
     font-style: normal;
     font-weight: 500;
@@ -142,4 +137,68 @@ footer {
 .wrap {
     display: flex;
     justify-content: space-between;
+}
+
+.banner-left-item {
+    margin-left: 50px;
+}
+
+.banner-left-item p {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.banner-left-item img {
+    margin-top: 50px;
+}
+
+.banner-right-item {
+    margin: 7px -2px 0 0;
+}
+
+.banner-right-item-title {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #010d01;
+}
+
+.banner-right-item-content {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #010d01;
+    opacity: 0.8;
+    margin: 61px 50px 63px 3px;
+}
+
+.colortext-blue {
+    color: #26325f;
+}
+
+.btn-success {
+    width: 280px;
+    height: 60px;
+    background-color: #16ff00;
+    color: #000000;
+    border-radius: 10px;
+    border: none;
+    margin-left: 43px;
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #000000;
 }
