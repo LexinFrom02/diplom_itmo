@@ -88,7 +88,6 @@ footer {
     font-weight: 500;
 }
 
-
 .banner-gradient {
     position: absolute;
     width: 1055px;
@@ -208,4 +207,22 @@ footer {
     line-height: 110%;
     text-transform: uppercase;
     color: #000000;
+}
+
+.btn-success-banner {
+    width: 280px;
+    height: 60px;
+    margin-left: 43px;
+}
+
+.search-room-content {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47.2381px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.93;
+    margin: 132px 0 0 48px;
 }
