@@ -59,11 +59,87 @@ footer {
     background-color: #293561;
 }
 
+.navigation {
+    display: flex;
+    justify-content: end;
+    margin-right: 34px;
+    padding-top: 27px;
+}
+
+.nav-item {
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    padding: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #010D01;
+    cursor: pointer;
+}
+
+.banner-gradient {
+    position: absolute;
+    width: 1055px;
+    height: 322px;
+    background: linear-gradient(
+        95.32deg,
+        rgba(255, 255, 255, 0.04) 5.89%,
+        rgba(255, 255, 255, 0.888998) 52.33%,
+        rgba(255, 255, 255, 0.633434) 76.94%,
+        rgba(255, 255, 255, 0) 103.34%
+    );
+    margin: 281px 0px 0 -153px;
+}
+
+.banner-gradient-header {
+    /* position: absolute; */
+    width: 943px;
+    height: 154.12px;
+    /* left: 198px; */
+    /* top: 402px; */
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55.2542px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #010d01;
+    opacity: 0.93;
+    padding-top: 52px;
+    padding-left: 200px;
+}
+
+.banner-gradient-content {
+    /* position: absolute; */
+    width: 943px;
+    height: 52px;
+    /* left: 198px; */
+    /* top: 571px; */
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #010d01;
+    opacity: 0.93;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
 .about-site {
     text-align: center;
-    vertical-align: bottom;
+    position: relative;
+    z-index: 2;
+    top: 688px;
+    right: 9px;
 }
 
 .wrap {
     display: flex;
+    justify-content: space-between;
 }
