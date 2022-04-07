@@ -142,6 +142,11 @@ footer {
     justify-content: space-between;
 }
 
+.wrap-search {
+    display: flex;
+    justify-content: left;
+}
+
 .banner-left-item {
     margin-left: 50px;
 }
@@ -298,9 +303,51 @@ footer {
     color: #000000;
 }
 
+.search-form-block {
+    margin-top: 68px;
+    margin-left: 64px;
+}
+
+.personal-form-input-rent-top {
+    background-color: transparent;
+    width: 100%;
+    margin: 0 auto;
+    height: 38px;
+    margin-top: 16px;
+    border-radius: 0;
+    border: 1px solid white;
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8.18182px;
+    line-height: 120%;
+    color: white;
+}
+
+.personal-form-input-rent-top::placeholder {
+    color: #ffffff;
+}
+
+.personal-form-input-rent-top:focus {
+    background-color: transparent;
+    color: #ffffff;
+}
+
 #confirmPersonal-rent {
     border: 1px solid black;
     border-radius: 0;
+}
+
+#rent-personal-form-top {
+    margin-bottom: 8px;
+}
+
+#confirmPersonal-rent-top {
+    border: 1px solid white;
+    border-radius: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-left: -2.2em;
 }
 
 #rent-personal-form {
@@ -458,9 +505,21 @@ footer {
     margin-left: 16px;
 }
 
+.btn-adv {
+    width: 271px;
+    margin-bottom: 40px;
+    margin-left: 43px;
+}
+
 .btn-dvantages-call-help {
     background-color: transparent;
     border: 1px solid #16ff00;
+    color: #ffffff;
+    font-family: "TT Firs Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
     color: #ffffff;
 }
 
@@ -602,6 +661,15 @@ footer {
     padding-left: 10px;
 }
 
+.checkbox-text-rent {
+    font-family: "TT Firs Neue";
+    font-size: 8px;
+    line-height: 160%;
+    color: #ffffff;
+    vertical-align: middle;
+    padding-left: 0;
+}
+
 .form-check {
     width: 89%;
     margin: 0 auto;
@@ -661,4 +729,13 @@ footer {
 
 .accordion-button:focus {
     box-shadow: none;
+}
+
+.title-banner-form {
+    position: absolute;
+    width: 300px;
+    height: 260px;
+    background: linear-gradient( 95.32deg, rgba(255, 255, 255, 0.84) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
+    border-radius: 0px;
+    transform: rotate(90deg);
 }

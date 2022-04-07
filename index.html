@@ -47,7 +47,9 @@
                         Бесплатный сервис подбора помещений для высокотехнологичного бизнеса в Москве
                     </p>
                 </div>
-                <form action="get"></form>
+                <div class="title-banner-form">
+                    <form action="get"></form>
+                </div>
             </div>
             <div class="about-site">
                 <img src="img/pic-about-site.png" class="img-fluid" alt="Что Вы найдете на сайте" />
@@ -78,14 +80,22 @@
         </div>
     </div>
     <div class="search-room">
-        <div class="container wrap">
+        <div class="container wrap-search">
             <div class="col-9">
                 <p class="search-room-content">
                     Мы оказываем услуги подбора <br /> на безвомездной основе
                 </p>
             </div>
-            <div class="col-3">
-                <form action="#"></form>
+            <div class="col-2 search-form-block">
+                <form action="#">
+                    <input class="form-control personal-form-input-rent-top" type="text" title="name" placeholder="Имя" />
+                    <input class="form-control personal-form-input-rent-top" type="text" title="phone" placeholder="Телефон" />
+                    <div class="form-check" id="rent-personal-form-top">
+                        <input class="form-check-input" type="checkbox" value="" id="confirmPersonal-rent-top" />
+                        <label class="form-check-label checkbox-text-rent" for="confirmPersonal-rent-top">Я согласен с политикой конфиденциальности</label>
+                    </div>
+                    <button type="button" class="btn btn-success btn-rent">Получить помощника</button>
+                </form>
             </div>
         </div>
     </div>
@@ -162,13 +172,9 @@
                         <input class="form-control personal-form-input-rent" type="text" title="phone" placeholder="Телефон" />
                         <div class="form-check" id="rent-personal-form">
                             <input class="form-check-input" type="checkbox" value="" id="confirmPersonal-rent" />
-                            <label class="form-check-label checkbox-text-black" for="confirmPersonal-rent">
-                  Я согласен с политикой конфиденциальности
-                </label>
+                            <label class="form-check-label checkbox-text-black" for="confirmPersonal-rent">Я согласен с политикой конфиденциальности</label>
                         </div>
-                        <button type="button" class="btn btn-success btn-rent">
-                Получить помощника
-              </button>
+                        <button type="button" class="btn btn-success btn-rent">Получить помощника</button>
                     </form>
                 </div>
             </div>
@@ -287,10 +293,10 @@
             </div>
             <div class="row">
                 <div class="col advantages-button-group">
-                    <button type="button" class="btn btn-success btn-advantages">
+                    <button type="button" class="btn btn-success btn-adv">
               Найти помещение
             </button>
-                    <button type="button" class="btn btn-success btn-advantages btn-dvantages-call-help">
+                    <button type="button" class="btn btn-success btn-adv btn-dvantages-call-help">
               Запросить помощника
             </button>
                 </div>
