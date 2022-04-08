@@ -11,6 +11,33 @@
     <script src="script/script.js"></script>
     <link rel="stylesheet" type="text/CSS" href="style/styles.css" />
     <script src="https://kit.fontawesome.com/31ef52e2ff.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        (function() {
+            function init() {
+                var scr = document.createElement("script");
+                scr.type = "text/javascript";
+                scr.defer = "defer";
+                scr.src =
+                    "//dev-cdn.qform.io/forms.js?v=" +
+                    parseInt(new Date().getTime() / 1000);
+                var scrInsert = document.getElementsByTagName("script")[0];
+                scrInsert.parentNode.insertBefore(scr, scrInsert);
+            }
+            var d = document;
+            var w = window;
+            if (d.readyState == "complete") {
+                init();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent("onload", init);
+                } else {
+                    w.addEventListener("load", init, false);
+                }
+            }
+        })();
+    </script>
+
     <title>Найдем помещение для бизнеса за 3 дня</title>
 </head>
 
@@ -92,356 +119,490 @@
                     <input class="form-control personal-form-input-rent-top" type="text" title="phone" placeholder="Телефон" />
                     <div class="form-check" id="rent-personal-form-top">
                         <input class="form-check-input" type="checkbox" value="" id="confirmPersonal-rent-top" />
-                        <label class="form-check-label checkbox-text-rent" for="confirmPersonal-rent-top">Я согласен с политикой конфиденциальности</label>
-                    </div>
-                    <button type="button" class="btn btn-success btn-rent">Получить помощника</button>
-                </form>
+                        <label class="form-check-label checkbox-text-rent" for="confirmPersonal-rent-top">Я согласен с политикой конфиденциальности</label
+              >
             </div>
+            <button type="button" class="btn btn-success btn-rent">
+              Получить помощника
+            </button>
+          </form>
         </div>
+      </div>
     </div>
     <div class="actual-offers">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 actual-offers-item">
-                    <img src="img/offer-1.png" alt="Аренда помещения 1" />
-                    <form action="#">
-                        <button type="button" class="btn btn-success actual-offers-button">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 actual-offers-item">
+            <img src="img/offer-1.png" alt="Аренда помещения 1" />
+            <form action="#">
+              <button
+                type="button"
+                class="btn btn-success actual-offers-button"
+              >
                 Найти помещение
               </button>
-                        <p class="call-help-block">
-                            <a href="#" class="call-help">Запросить помощника</a>
-                        </p>
-                    </form>
-                </div>
-                <div class="col-6 actual-offers-item">
-                    <img src="img/offer-2.png" alt="Аренда помещения 2" />
-                    <button type="button" class="btn btn-success actual-offers-button">
+              <p class="call-help-block">
+                <a href="#" class="call-help">Запросить помощника</a>
+              </p>
+            </form>
+          </div>
+          <div class="col-6 actual-offers-item">
+            <img src="img/offer-2.png" alt="Аренда помещения 2" />
+            <button type="button" class="btn btn-success actual-offers-button">
               Найти помещение
             </button>
-                    <p class="call-help-block">
-                        <a href="#" class="call-help">Запросить помощника</a>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 actual-offers-item">
-                    <img src="img/offer-3.png" alt="Аренда помещения 3" />
-                    <button type="button" class="btn btn-success actual-offers-button">
-              Найти помещение
-            </button>
-                    <p class="call-help-block">
-                        <a href="#" class="call-help">Запросить помощника</a>
-                    </p>
-                </div>
-                <div class="col-6 actual-offers-item">
-                    <img src="img/offer-4.png" alt="Аренда помещения 4" />
-                    <button type="button" class="btn btn-success actual-offers-button">
-              Найти помещение
-            </button>
-                    <p class="call-help-block">
-                        <a href="#" class="call-help">Запросить помощника</a>
-                    </p>
-                </div>
-            </div>
+            <p class="call-help-block">
+              <a href="#" class="call-help">Запросить помощника</a>
+            </p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-6 actual-offers-item">
+            <img src="img/offer-3.png" alt="Аренда помещения 3" />
+            <button type="button" class="btn btn-success actual-offers-button">
+              Найти помещение
+            </button>
+            <p class="call-help-block">
+              <a href="#" class="call-help">Запросить помощника</a>
+            </p>
+          </div>
+          <div class="col-6 actual-offers-item">
+            <img src="img/offer-4.png" alt="Аренда помещения 4" />
+            <button type="button" class="btn btn-success actual-offers-button">
+              Найти помещение
+            </button>
+            <p class="call-help-block">
+              <a href="#" class="call-help">Запросить помощника</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="rent-out-room" id="rent">
-        <div class="container">
-            <div class="row">
-                <div class="col-7">
-                    <div class="rent-your-room-title">
-                        Сдайте свое <br /> помещение в аренду
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <div class="rent-your-room-title">
+              Сдайте свое <br />
+              помещение в аренду
             </div>
-            <div class="row">
-                <div class="col-5">
-                    <div class="article-content">
-                        Разместите объявление в личном кабинете вашей компании, чтобы найти потенциальных арендаторов.
-                    </div>
-                    <div class="article-content">
-                        Для этого необходимо пройти регистрацию и получить статус «Участник кластера».
-                    </div>
-                    <div class="article-content article-content-bottom">
-                        *Доступно для юридических лиц, зарегистрированных на территории Москвы.
-                    </div>
-                </div>
-                <div class="col-2 rent-form">
-                    <form action="#">
-                        <input class="form-control personal-form-input-rent" type="text" title="name" placeholder="Имя" />
-                        <input class="form-control personal-form-input-rent" type="text" title="phone" placeholder="Телефон" />
-                        <div class="form-check" id="rent-personal-form">
-                            <input class="form-check-input" type="checkbox" value="" id="confirmPersonal-rent" />
-                            <label class="form-check-label checkbox-text-black" for="confirmPersonal-rent">Я согласен с политикой конфиденциальности</label>
-                        </div>
-                        <button type="button" class="btn btn-success btn-rent">Получить помощника</button>
-                    </form>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <div class="about-company" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p class="title-black">
-                        найдите лучшие условия для развития <br /> вашего бизнеса
-                    </p>
-                </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="article-content">
+              Разместите объявление в личном кабинете вашей компании, чтобы
+              найти потенциальных арендаторов.
             </div>
-            <div class="row infographics">
-                <div class="col-4 info-align-end">
-                    <img src="img/building-icon.png" alt="Иконка" />
-                    <p class="info-upper-font">8</p>
-                    <p class="info-lower-font">
-                        инновационных <br /> проектов
-                    </p>
-                </div>
-                <div class="col-8 info-align-end">
-                    <img src="img/building-icon.png" alt="Иконка" />
-                    <p class="info-upper-font">398 168 м<sup>2</sup></p>
-                    <p class="info-lower-font">
-                        суммарная площадь <br /> для аренды
-                    </p>
-                </div>
+            <div class="article-content">
+              Для этого необходимо пройти регистрацию и получить статус
+              «Участник кластера».
             </div>
-            <div class="row">
-                <div class="col-7">
-                    <img src="img/img-about.png" class="img-fluid" alt="О компании" />
-                </div>
-                <div class="col-5 about-company-block">
-                    <p class="about-company-title">О компании</p>
-                    <p class="article-content">
-                        Сервис ориентирован на сдачу в аренду специализированной недвижимости - для работы коммерческих технологических организаций в Москве.
-                    </p>
-                    <p class="article-content">
-                        Данный проект помогает сдать или снять в аренду специализированное помещение для бизнеса - лабораторию, технопарк, промышленное помещение, офис, выставочное помещение или конференц-зал.
-                    </p>
-                </div>
+            <div class="article-content article-content-bottom">
+              *Доступно для юридических лиц, зарегистрированных на территории
+              Москвы.
             </div>
-        </div>
-    </div>
-    <div class="advantages" id="advantages">
-        <div class="container-advantages">
-            <div class="row">
-                <div class="advantages-title">преимущества</div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="advantages-item">
-                        <div class="col-2">
-                            <img src="img/icon-4.png" alt="Палец вверх" />
-                        </div>
-                        <div class="advantage-article col-8">
-                            <p class="advantages-item-title">надежность и точность</p>
-                            <p class="advantages-item-content">
-                                Объявления напрямую от компаний. Наши модераторы проверяют каждое объявление, чтобы убедиться, что посредников и комиссии действительно нет.
-                            </p>
-                            <p class="advantages-item-tag">
-                                <img src="img/hr.png" alt="Линия" />3000 проверенных объявлений
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="advantages-item">
-                        <div class="col-2">
-                            <img src="img/icon-3.png" alt="Курсор" />
-                        </div>
-                        <div class="advantage-article col-8">
-                            <p class="advantages-item-title">Быстро и легко</p>
-                            <p class="advantages-item-content">
-                                Мы готовы помочь в поиске нужного помещения, чтобы сэкономить вам силы и время. Личный помощник возьмет все заботы на себя!
-                            </p>
-                            <p class="advantages-item-tag">
-                                <img src="img/hr.png" alt="Линия" />Найдем помещение за 3 дня
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="advantages-item">
-                        <div class="col-2">
-                            <img src="img/icon-2.png" alt="Увеличительное стекло" />
-                        </div>
-                        <div class="advantage-article col-8">
-                            <p class="advantages-item-title">уникальные помещения</p>
-                            <p class="advantages-item-content">
-                                Только актуальные объявления . Мы регулярно проверяем нашу базу помещений, чтобы вы могли видеть только актуальные объявления.
-                            </p>
-                            <p class="advantages-item-tag">
-                                <img src="img/hr.png" alt="Линия" />Еженедельная модерация объявлений
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="advantages-item">
-                        <div class="col-2">
-                            <img src="img/icon-1.png" alt="Бумажник" />
-                        </div>
-                        <div class="advantage-article col-8">
-                            <p class="advantages-item-title">бесплатный сервис</p>
-                            <p class="advantages-item-content">
-                                Доступ к сервису предоставляется на безвозмездной основе. Мы не берем комиссий за поиск помещений и размещение объявлений.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col advantages-button-group">
-                    <button type="button" class="btn btn-success btn-adv">
-              Найти помещение
-            </button>
-                    <button type="button" class="btn btn-success btn-adv btn-dvantages-call-help">
-              Запросить помощника
-            </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="question-banner" id="personal-help">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 personal-help-form">
-                    <div class="personal-help-form-title">
-                        <span class="colortext-green">получите</span> личного помощника
-                    </div>
-                    <div class="personal-help-form-content">
-                        Наши эксперты по недвижимости готовы помочь вам в поиске идеального помещения для решения ваших задач.
-                    </div>
-                    <form action="#">
-                        <input class="form-control personal-form-input" type="text" title="name" placeholder="Имя" />
-                        <input class="form-control personal-form-input" type="text" title="phone" placeholder="Телефон" />
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="confirmPersonal" />
-                            <label class="form-check-label checkbox-text" for="confirmPersonal">
-                  вы соглашаетесь с нашей политикой конфиденциальности
-                </label>
-                        </div>
-                        <button type="button" class="btn btn-success btn-advantages">
+          </div>
+          <div class="col-2 rent-form">
+            <form action="#">
+              <input
+                class="form-control personal-form-input-rent"
+                type="text"
+                title="name"
+                placeholder="Имя"
+              />
+              <input
+                class="form-control personal-form-input-rent"
+                type="text"
+                title="phone"
+                placeholder="Телефон"
+              />
+              <div class="form-check" id="rent-personal-form">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="confirmPersonal-rent"
+                />
+                <label
+                  class="form-check-label checkbox-text-black"
+                  for="confirmPersonal-rent"
+                  >Я согласен с политикой конфиденциальности</label
+                >
+              </div>
+              <button type="button" class="btn btn-success btn-rent">
                 Получить помощника
               </button>
-                    </form>
-                </div>
-            </div>
+            </form>
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="about-company" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="title-black">
+              найдите лучшие условия для развития <br />
+              вашего бизнеса
+            </p>
+          </div>
+        </div>
+        <div class="row infographics">
+          <div class="col-4 info-align-end">
+            <img src="img/building-icon.png" alt="Иконка" />
+            <p class="info-upper-font">8</p>
+            <p class="info-lower-font">
+              инновационных <br />
+              проектов
+            </p>
+          </div>
+          <div class="col-8 info-align-end">
+            <img src="img/building-icon.png" alt="Иконка" />
+            <p class="info-upper-font">398 168 м<sup>2</sup></p>
+            <p class="info-lower-font">
+              суммарная площадь <br />
+              для аренды
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7">
+            <img src="img/img-about.png" class="img-fluid" alt="О компании" />
+          </div>
+          <div class="col-5 about-company-block">
+            <p class="about-company-title">О компании</p>
+            <p class="article-content">
+              Сервис ориентирован на сдачу в аренду специализированной
+              недвижимости - для работы коммерческих технологических организаций
+              в Москве.
+            </p>
+            <p class="article-content">
+              Данный проект помогает сдать или снять в аренду специализированное
+              помещение для бизнеса - лабораторию, технопарк, промышленное
+              помещение, офис, выставочное помещение или конференц-зал.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantages" id="advantages">
+      <div class="container-advantages">
+        <div class="row">
+          <div class="advantages-title">преимущества</div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="advantages-item">
+              <div class="col-2">
+                <img src="img/icon-4.png" alt="Палец вверх" />
+              </div>
+              <div class="advantage-article col-8">
+                <p class="advantages-item-title">надежность и точность</p>
+                <p class="advantages-item-content">
+                  Объявления напрямую от компаний. Наши модераторы проверяют
+                  каждое объявление, чтобы убедиться, что посредников и комиссии
+                  действительно нет.
+                </p>
+                <p class="advantages-item-tag">
+                  <img src="img/hr.png" alt="Линия" />3000 проверенных
+                  объявлений
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="advantages-item">
+              <div class="col-2">
+                <img src="img/icon-3.png" alt="Курсор" />
+              </div>
+              <div class="advantage-article col-8">
+                <p class="advantages-item-title">Быстро и легко</p>
+                <p class="advantages-item-content">
+                  Мы готовы помочь в поиске нужного помещения, чтобы сэкономить
+                  вам силы и время. Личный помощник возьмет все заботы на себя!
+                </p>
+                <p class="advantages-item-tag">
+                  <img src="img/hr.png" alt="Линия" />Найдем помещение за 3 дня
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="advantages-item">
+              <div class="col-2">
+                <img src="img/icon-2.png" alt="Увеличительное стекло" />
+              </div>
+              <div class="advantage-article col-8">
+                <p class="advantages-item-title">уникальные помещения</p>
+                <p class="advantages-item-content">
+                  Только актуальные объявления . Мы регулярно проверяем нашу
+                  базу помещений, чтобы вы могли видеть только актуальные
+                  объявления.
+                </p>
+                <p class="advantages-item-tag">
+                  <img src="img/hr.png" alt="Линия" />Еженедельная модерация
+                  объявлений
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="advantages-item">
+              <div class="col-2">
+                <img src="img/icon-1.png" alt="Бумажник" />
+              </div>
+              <div class="advantage-article col-8">
+                <p class="advantages-item-title">бесплатный сервис</p>
+                <p class="advantages-item-content">
+                  Доступ к сервису предоставляется на безвозмездной основе. Мы
+                  не берем комиссий за поиск помещений и размещение объявлений.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col advantages-button-group">
+            <button type="button" class="btn btn-success btn-adv">
+              Найти помещение
+            </button>
+            <button
+              type="button"
+              class="btn btn-success btn-adv btn-dvantages-call-help"
+            >
+            <a class="nav-link" href="#personal-help">Запросить помощника</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="question-banner" id="personal-help">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 personal-help-form">
+            <div class="personal-help-form-title">
+              <span class="colortext-green">получите</span> личного помощника
+            </div>
+            <div class="personal-help-form-content">
+              Наши эксперты по недвижимости готовы помочь вам в поиске
+              идеального помещения для решения ваших задач.
+            </div>
+            <div data-formid="form_KjcTi8vrK8XA29Icx9jADVOXzsH39U14"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="questions" id="faq">
-        <div class="container">
-            <div class="row question-block">
-                <div class="col-6 question-left-section">
-                    <div class="question-title">
-                        <span class="colortext-green">Что</span> важно знать
-                    </div>
-                    <hr />
-                    <div class="question-content">
-                        Ответ на важный вопрос. Объявления напрямую от компаний. Наши модераторы проверяют каждое объявление, чтобы убедиться, что посредников и комиссии действительно нет.
-                    </div>
-                    <hr />
-                    <div class="question-footer">Важный частый вопрос №2?</div>
-                </div>
-                <div class="col-6 question-right-section">
-                    <div class="accordion-flush" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div class="container">
+        <div class="row question-block">
+          <div class="col-6 question-left-section">
+            <div class="question-title">
+              <span class="colortext-green">Что</span> важно знать
+            </div>
+            <hr />
+            <div class="question-content">
+              Ответ на важный вопрос. Объявления напрямую от компаний. Наши
+              модераторы проверяют каждое объявление, чтобы убедиться, что
+              посредников и комиссии действительно нет.
+            </div>
+            <hr />
+            <div class="question-footer">Важный частый вопрос №2?</div>
+          </div>
+          <div class="col-6 question-right-section">
+            <div class="accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
                     Важный частый вопрос №1
                   </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
                     Важный частый вопрос №2
                   </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
                     Важный частый вопрос №3
                   </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
                     Важный частый вопрос №4
                   </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
                     Важный частый вопрос №5
                   </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-                                    as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-                                    though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <div class="container">
-            <div class="social">
-                <div class="soc-item">
-                    <a href="#"> Facebook </a>
-                </div>
-                <div class="soc-item">
-                    <a href="#"> Вконтакте </a>
-                </div>
-                <div class="soc-item">
-                    <a href="#"> Twitter </a>
-                </div>
-                <div class="soc-item">
-                    <a href="#"> Instagram </a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="social">
+          <div class="soc-item">
+            <a href="#"> Facebook </a>
+          </div>
+          <div class="soc-item">
+            <a href="#"> Вконтакте </a>
+          </div>
+          <div class="soc-item">
+            <a href="#"> Twitter </a>
+          </div>
+          <div class="soc-item">
+            <a href="#"> Instagram </a>
+          </div>
         </div>
+      </div>
     </footer>
-    <button onclick="topFunction()" type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <button
+      onclick="topFunction()"
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
       <i class="fas fa-arrow-up"></i>
     </button>
-</body>
-
+  </body>
 </html>

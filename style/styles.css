@@ -523,8 +523,13 @@ footer {
     color: #ffffff;
 }
 
-.btn-dvantages-call-help:hover {
-    color: #000000;
+.btn-dvantages-call-help a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-dvantages-call-help a:hover {
+    color: white;
 }
 
 .social {
@@ -601,12 +606,12 @@ footer {
 }
 
 .personal-help-form {
-    max-width: 380px;
-    max-height: 484px;
+    width: 24rem;
+    min-height: 33rem;
     background: linear-gradient(180deg, #273460 0%, rgba(39, 52, 96, 0.56) 100%);
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 50px rgb(0 0 0 / 10%);
     border-radius: 8px;
-    margin: 103px 0 0 48px;
+    margin: 58px 0 0 48px;
 }
 
 .personal-help-form-title {
@@ -633,25 +638,6 @@ footer {
     padding-bottom: 25px;
 }
 
-.personal-form-input {
-    background-color: transparent;
-    width: 91%;
-    margin: 0 auto;
-    height: 50px;
-    margin-top: 15px;
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-.personal-form-input:focus {
-    background-color: transparent;
-    color: #ffffff;
-}
-
-.personal-form-input::placeholder {
-    color: #ffffff;
-}
-
 .checkbox-text {
     font-family: "TT Firs Neue";
     font-size: 10px;
@@ -668,20 +654,6 @@ footer {
     color: #ffffff;
     vertical-align: middle;
     padding-left: 0;
-}
-
-.form-check {
-    width: 89%;
-    margin: 0 auto;
-    margin-top: 6px;
-    margin-bottom: 29px;
-}
-
-.form-check-input {
-    width: 1.25rem;
-    height: 1.25rem;
-    background-color: transparent;
-    border: 1px solid #ffffff;
 }
 
 .question-left-section,
@@ -738,4 +710,61 @@ footer {
     background: linear-gradient( 95.32deg, rgba(255, 255, 255, 0.84) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
     border-radius: 0px;
     transform: rotate(90deg);
+}
+
+.wrap-input-field-2 {
+    /* margin: 0 auto; */
+}
+
+.wrap-submit-button-help-2 {}
+
+.qform-field__block_box__field-box_input {
+    width: 90%;
+    height: 3rem;
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #ffffff;
+    margin: -10px 0 -5px 15px;
+    font-family: "TT Firs Neue";
+}
+
+.qform-field__block_box__field-box_input::placeholder {
+    color: #ffffff;
+    padding-left: 10px;
+    font-family: "TT Firs Neue";
+}
+
+.qform-field__block_box__field-box_input:focus {
+    padding-left: 10px;
+}
+
+.qform-field-outside-label-box {
+    margin-left: 15px;
+    color: #ffffff;
+    font-family: "TT Firs Neue";
+}
+
+.qform-field__submit_agree-box {
+    color: #ffffff;
+    font-family: "TT Firs Neue";
+    font-size: 13px;
+    line-height: 160%;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.submit-button-help-2 {
+    width: 20rem;
+    height: 3.5rem;
+    background: #16ff00;
+    border-radius: 8px;
+    font-family: "TT Firs Neue";
+    font-size: 16px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
