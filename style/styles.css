@@ -92,7 +92,6 @@ footer {
 }
 
 .banner-gradient {
-    position: absolute;
     width: 1055px;
     height: 322px;
     background: linear-gradient( 95.32deg, rgba(255, 255, 255, 0.04) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
@@ -133,7 +132,7 @@ footer {
     text-align: center;
     position: relative;
     z-index: 2;
-    top: 688px;
+    top: 84px;
     right: 9px;
 }
 
@@ -217,6 +216,14 @@ footer {
     margin-left: 43px;
 }
 
+.btn-success-banner a {
+    color: #000000;
+}
+
+.btn-success-banner a:hover {
+    color: #ffffff;
+}
+
 .search-room-content {
     font-family: "TT Firs Neue";
     font-style: normal;
@@ -231,11 +238,19 @@ footer {
 
 .actual-offers-item {
     text-align: center;
-    padding-top: 90px;
+    margin-top: 90px;
 }
 
 .actual-offers-button {
     margin: 27px 0 10px 0;
+}
+
+.actual-offers-button a {
+    color: #000000;
+}
+
+.actual-offers-button a:hover {
+    color: white;
 }
 
 .call-help-block {
@@ -511,6 +526,14 @@ footer {
     margin-left: 43px;
 }
 
+.btn-adv a {
+    color: #000000;
+}
+
+.btn-adv a:hover {
+    color: white;
+}
+
 .btn-dvantages-call-help {
     background-color: transparent;
     border: 1px solid #16ff00;
@@ -607,7 +630,7 @@ footer {
 
 .personal-help-form {
     width: 24rem;
-    min-height: 33rem;
+    min-height: 31rem;
     background: linear-gradient(180deg, #273460 0%, rgba(39, 52, 96, 0.56) 100%);
     box-shadow: 0px 0px 50px rgb(0 0 0 / 10%);
     border-radius: 8px;
@@ -704,29 +727,25 @@ footer {
 }
 
 .title-banner-form {
-    position: absolute;
     width: 300px;
-    height: 260px;
-    background: linear-gradient( 95.32deg, rgba(255, 255, 255, 0.84) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
+    height: 322px;
+    background: linear-gradient( 195.32deg, rgba(255, 255, 255, 0.84) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
     border-radius: 0px;
-    transform: rotate(90deg);
+    margin-top: 281px;
 }
 
-.wrap-input-field-2 {
-    /* margin: 0 auto; */
-}
-
-.wrap-submit-button-help-2 {}
-
-.qform-field__block_box__field-box_input {
-    width: 90%;
+.wrap-input-field-2 div div div div div div input {
+    width: 100%;
     height: 3rem;
     border-radius: 7px;
     border: 1px solid white;
     background-color: transparent;
     color: #ffffff;
-    margin: -10px 0 -5px 15px;
     font-family: "TT Firs Neue";
+}
+
+.personal-help-form-content div form {
+    padding: 0 10px;
 }
 
 .qform-field__block_box__field-box_input::placeholder {
@@ -745,13 +764,14 @@ footer {
     font-family: "TT Firs Neue";
 }
 
-.qform-field__submit_agree-box {
-    color: #ffffff;
+.personal-help-form div form .qform-row div div .qform-field__submit_agree-box {
+    color: white;
     font-family: "TT Firs Neue";
-    font-size: 13px;
+    font-size: 10px;
     line-height: 160%;
     margin-left: 15px;
     margin-top: 30px;
+    padding-left: 15px;
 }
 
 .submit-button-help-2 {
@@ -767,4 +787,199 @@ footer {
     font-style: normal;
     font-weight: 600;
     margin-bottom: 30px;
+}
+
+.wrap-input-field-1 div div div div div div input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-family: "TT Firs Neue";
+}
+
+.wrap-input-field-1 div div div div div div input::placeholder {
+    color: black;
+    padding-left: 10px;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+}
+
+.wrap-input-field-1 div div div div div div input:focus {
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.wrap-input-field-1 div div div label {
+    display: none;
+}
+
+.wrap-input-field-2 div div div label {
+    display: none;
+}
+
+.rent-form div form .qform-row div div .qform-field__submit_agree-box {
+    color: black;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+    line-height: 100%;
+    padding: -15px 0 0 -15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.submit-button-help-1 {
+    width: 12rem;
+    height: 2rem;
+    background: #16ff00;
+    border-radius: 5px;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.accept-agree,
+.notaccept-agree {
+    text-decoration: none;
+}
+
+.wrap-input-field-room-2 div div div div div div input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: "TT Firs Neue";
+}
+
+.wrap-input-field-room-2 div div div div div div input::placeholder {
+    color: white;
+    padding-left: 10px;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+}
+
+.wrap-input-field-room-2 div div div div div div input:focus {
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.wrap-input-field-room-2 div div div label {
+    display: none;
+}
+
+.wrap-input-field-room-2 div div div label {
+    display: none;
+}
+
+.search-form-block div form .qform-row div div .qform-field__submit_agree-box {
+    color: white;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+    line-height: 100%;
+    padding: -15px 0 0 -15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.submit-button-room-2 {
+    width: 13.5rem;
+    height: 2rem;
+    background: #16ff00;
+    border-radius: 5px;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.submit-button-help-1,
+.submit-button-help-2,
+.submit-button-room-1,
+.submit-button-room-2 {
+    border: none;
+}
+
+.submit-button-help-1:focus,
+.submit-button-help-2:focus,
+.submit-button-room-1:focus,
+.submit-button-room-2:focus {
+    border: 2px solid black;
+}
+
+.call-help-block a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.wrap-input-field-room-1 div div div div div div input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-family: "TT Firs Neue";
+}
+
+.wrap-input-field-room-1 div div div div div div input::placeholder {
+    color: black;
+    padding-left: 10px;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+}
+
+.wrap-input-field-room-1 div div div div div div input:focus {
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+.wrap-input-field-room-1 div div div label {
+    display: none;
+}
+
+.wrap-input-field-room-1 div div div label {
+    display: none;
+}
+
+.title-banner-form div form .qform-row div div .qform-field__submit_agree-box {
+    color: black;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+    line-height: 100%;
+    padding: -15px 0 0 -15px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.submit-button-room-1 {
+    width: 14.5rem;
+    height: 2rem;
+    background: #16ff00;
+    border-radius: 5px;
+    font-family: "TT Firs Neue";
+    font-size: 10px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.title-banner-form div form {
+    margin: 80px 35px;
+}
+
+.qform-field__block_box__field-box_input {
+    font-size: 10px;
+    padding-left: 10px;
 }
