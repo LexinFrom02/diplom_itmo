@@ -1,5 +1,6 @@
 @import url(../fonts/neue.css);
 @import url(../fonts/ttoctosquares.css);
+
 header {
     min-height: 70px;
 }
@@ -9,6 +10,7 @@ header {
     background-image: url(../img/title-banner-img.png);
     width: 100%;
     background-position: center;
+    background-size: cover;
 }
 
 .banner {
@@ -94,7 +96,7 @@ footer {
 .banner-gradient {
     width: 1055px;
     height: 322px;
-    background: linear-gradient( 95.32deg, rgba(255, 255, 255, 0.04) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
+    background: linear-gradient(95.32deg, rgba(255, 255, 255, 0.04) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
     margin: 281px 0px 0 -153px;
 }
 
@@ -729,7 +731,7 @@ footer {
 .title-banner-form {
     width: 300px;
     height: 322px;
-    background: linear-gradient( 195.32deg, rgba(255, 255, 255, 0.84) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
+    background: linear-gradient(195.32deg, rgba(255, 255, 255, 0.84) 5.89%, rgba(255, 255, 255, 0.888998) 52.33%, rgba(255, 255, 255, 0.633434) 76.94%, rgba(255, 255, 255, 0) 103.34%);
     border-radius: 0px;
     margin-top: 281px;
 }
@@ -982,4 +984,507 @@ footer {
 .qform-field__block_box__field-box_input {
     font-size: 10px;
     padding-left: 10px;
+}
+
+.qform-field__submit_agree-box label:before {
+    height: 1rem;
+    width: 1rem;
+}
+
+.qform-field__submit_agree-box label:after {
+    height: 1rem;
+    width: 1rem;
+}
+
+.qform-field__submit_agree-box input[type=checkbox]:checked+label:after {
+    opacity: 1;
+    margin-left: -8px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .banner-gradient {
+        width: 50rem;
+        height: 20rem;
+        margin: 281px 0px 0 -222px;
+    }
+
+    .banner-gradient-header {
+        font-size: 30px;
+    }
+
+    .banner-gradient-content {
+        width: 570px;
+        font-size: 16px;
+        padding-top: 0;
+    }
+
+    .submit-button-room-1 {
+        width: 10rem;
+    }
+
+    .title-banner-form {
+        width: 235px;
+    }
+
+    .btn-success-banner {
+        margin-bottom: 20px;
+        width: 210px;
+    }
+
+    .banner-left-item {
+        margin: 0;
+    }
+
+    .banner-right-item-content {
+        margin: 61px 0 63px 0;
+        font-size: 14px;
+    }
+
+    .submit-button-room-2 {
+        width: 7.5rem;
+    }
+
+    .search-room-content {
+        margin: 98px 0 0 7px;
+        font-size: 30.2381px;
+    }
+
+    .actual-offers-item img {
+        width: 86%;
+    }
+
+    .actual-offers {
+        min-height: 80rem;
+    }
+
+    .rent-your-room-title {
+        font-size: 35px;
+        margin: 60px 0 29px 37px;
+    }
+
+    .article-content {
+        font-size: 13px;
+    }
+
+    .article-content-bottom {
+        font-size: 10px;
+    }
+
+    .title-black {
+        font-size: 30px;
+    }
+
+    .info-upper-font {
+        font-size: 43px;
+    }
+
+    .info-lower-font {
+        font-size: 13px;
+    }
+
+    .about-company-title {
+        font-size: 26px;
+        padding-top: 30px;
+    }
+
+    .advantages-item div img {
+        display: none;
+    }
+
+    .advantages-item-title {
+        font-size: 21px;
+    }
+
+    .advantages-item-content {
+        font-size: 14px;
+    }
+
+    .advantages-item-tag {
+        font-size: 16px;
+    }
+
+    .navigation div {
+        font-size: 12px;
+    }
+
+    .banner-left-item p {
+        font-size: 25px;
+    }
+
+    .banner-right-item-title {
+        font-size: 25px
+    }
+
+    .banner {
+        padding-top: 200px;
+    }
+
+    .banner-left-item img {
+        margin: 20px 0;
+    }
+
+    .banner-left-item {
+        margin: 0;
+    }
+
+    .banner-right-item-content {
+        font-size: 14px;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .btn-success-banner {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .banner-gradient {
+        width: 40rem;
+        height: 14rem;
+    }
+
+    .banner-gradient-header {
+        font-size: 24px;
+    }
+
+    .banner-gradient-content {
+        font-size: 13px;
+    }
+
+    .title-banner-form {
+        height: 229px;
+    }
+
+    .title-banner-form div form {
+        margin: 40px 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .title-banner-form {
+        display: none;
+    }
+
+    .banner-gradient {
+        margin: 0;
+        width: 100%;
+    }
+
+    .banner-gradient-header {
+        padding: 20px;
+        padding-top: 70px;
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .banner-gradient-content {
+        font-size: 1.3rem;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .title-banner {
+        min-height: 550px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .navigation div {
+        font-size: 10px;
+    }
+
+    .search-room-content {
+        margin: 170px 0 0 0;
+        font-size: 15px;
+    }
+
+    .search-form-block {
+        margin-top: 100px;
+    }
+
+    .rent-out-room {
+        margin-top: 65px;
+    }
+
+    .rent-your-room-title {
+        font-size: 30px;
+    }
+
+    .submit-button-help-1 {
+        margin-bottom: 20px;
+    }
+
+    .title-black {
+        font-size: 20px;
+    }
+
+    .info-align-end img {
+        width: 10%;
+    }
+
+    .info-upper-font {
+        font-size: 20px;
+    }
+
+    .info-lower-font {
+        font-size: 10px;
+    }
+
+    .about-company-title {
+        margin: 30px 0 11px 35px;
+        font-size: 20px;
+    }
+
+    .article-content {
+        font-size: 15px;
+    }
+
+    .advantages-title {
+        font-size: 20px;
+    }
+
+    .advantages-item div img {
+        display: none;
+    }
+
+    .advantages-item-title {
+        font-size: 17px;
+    }
+
+    .advantages-item-content {
+        font-size: 14px;
+    }
+
+    .advantages-item-tag {
+        font-size: 15px;
+    }
+
+    .banner .container {
+        display: block;
+    }
+
+    .banner {
+        padding-top: 30px;
+    }
+
+    .banner-left-item img {
+        margin: 20px 0;
+    }
+
+    .banner-left-item {
+        margin: 0;
+    }
+
+    .banner-right-item-content {
+        font-size: 14px;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .btn-success-banner {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    /* .search-room div {
+        display: block;
+    } */
+
+    .navigation, .banner div, .social {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .title-banner-form {
+        display: none;
+    }
+
+    .banner-content {
+        justify-content: center;
+    }
+
+    .navigation .nav-item {
+        text-align: center;
+    }
+
+    .banner-gradient {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .banner-gradient-header {
+        width: 100%;
+        font-size: 2rem;
+        padding-left: 100px;
+    }
+
+    .banner-gradient-content {
+        display: none;
+    }
+
+    .about-site {
+        position: static;
+    }
+
+    .banner {
+        padding-top: 30px;
+    }
+
+    .title-black {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .banner-left-item img {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .banner-right-item {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .banner-right-item-content {
+        margin: 50px 0;
+    }
+
+    .search-room-content {
+        font-size: 1.5rem;
+        padding: 15px;
+        margin-top: 60px;
+    }
+
+    .search-form-block {
+        margin: 0;
+    }
+
+    .search-form-block {
+        display: none;
+    }
+
+    .banner-right-item form {
+        padding-bottom: 30px;
+    }
+
+    .call-help-block {
+        margin-bottom: 0;
+    }
+
+    .rent-your-room-title {
+        margin: 50px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .about-company {
+        padding: 20px;
+    }
+
+    .info-align-end img {
+        display: none;
+    }
+
+    .info-upper-font {
+        font-size: 15px;
+    }
+
+    .info-lower-font {
+        font-size: 15px;
+        margin: 0 0 0 15px;
+    }
+
+    .about-company-title {
+        font-size: 20px;
+        margin: 20px 0 0px 0px;
+        text-align: center;
+    }
+
+    .advantages-title {
+        margin: 30px 0;
+        font-size: 24px;
+    }
+
+    .advantages-item div img {
+        display: none;
+    }
+
+    .advantages-item-title {
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+    .advantages-item-content {
+        font-size: 12px;
+    }
+
+    .advantages-item-tag {
+        font-size: 16px;
+    }
+    .advantages-item {
+        margin-bottom: 20px;
+    }
+
+    .btn-adv {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .advantages-button-group {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .personal-help-form {
+        margin: 0 auto;
+    }
+
+    .submit-button-help-2 {
+        width: 14rem;
+    }
+
+    .question-left-section, .question-right-section {
+        margin-top: 30px;
+    }
+
+    .actual-offers-item img {
+        width: 80%;
+    }
+
+    .actual-offers-item {
+        text-align: center;
+    }
+    
+    .btn-success-banner {
+        width: 230px;
+    }
+
+    .actual-offers-button {
+        width: 235px;
+    }
+
+    .article-content {
+        padding: 22px 0 0 0;
+    }
+
+@media (min-width: 1200px) and (max-width: 1450px) {
+    .info-upper-font {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 360px) {
+    .advantages-button-group {
+        display: block;
+        text-align: center;
+    }
+
+    .btn-adv {
+        width: 200px;
+    }
 }
