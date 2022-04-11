@@ -1138,6 +1138,12 @@ footer {
     }
 }
 
+@media (min-width: 1201px) and (max-width: 1399px) {
+    .submit-button-room-2 {
+        width: 11.5rem;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1000px) {
     .banner-gradient {
         width: 40rem;
@@ -1162,6 +1168,10 @@ footer {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .question-block {
+        padding: 0;
+    } 
+
     .title-banner-form {
         display: none;
     }
@@ -1294,6 +1304,13 @@ footer {
     /* .search-room div {
         display: block;
     } */
+    .advantages-item .col-2 {
+        flex: 0;
+    }
+
+    .question-block {
+        padding: 0;
+    } 
 
     .navigation, .banner div, .social {
         display: block;
@@ -1377,7 +1394,7 @@ footer {
     }
 
     .rent-your-room-title {
-        margin: 50px 0;
+        margin: 10px 0;
         font-size: 30px;
         text-align: center;
     }
@@ -1426,6 +1443,7 @@ footer {
     .advantages-item-tag {
         font-size: 16px;
     }
+
     .advantages-item {
         margin-bottom: 20px;
     }
@@ -1459,9 +1477,10 @@ footer {
     .actual-offers-item {
         text-align: center;
     }
-    
+
     .btn-success-banner {
         width: 230px;
+        margin: 0;
     }
 
     .actual-offers-button {
@@ -1472,19 +1491,21 @@ footer {
         padding: 22px 0 0 0;
     }
 
-@media (min-width: 1200px) and (max-width: 1450px) {
-    .info-upper-font {
-        font-size: 55px;
-    }
-}
-
-@media (max-width: 360px) {
-    .advantages-button-group {
-        display: block;
-        text-align: center;
+    @media (min-width: 1200px) and (max-width: 1450px) {
+        .info-upper-font {
+            font-size: 55px;
+        }
     }
 
-    .btn-adv {
-        width: 200px;
+    @media (max-width: 360px) {
+        .advantages-button-group {
+            display: block;
+            text-align: center;
+        }
+
+        .btn-adv {
+            width: 200px;
+        }
     }
-}
+
+  
