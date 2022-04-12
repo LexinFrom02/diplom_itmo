@@ -1381,8 +1381,12 @@ footer {
         margin: 0;
     }
 
-    .search-form-block {
+    /* .search-form-block {
         display: none;
+    } */
+
+    .search-room .container {
+        display: block;
     }
 
     .banner-right-item form {
